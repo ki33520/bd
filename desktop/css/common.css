@@ -32,8 +32,6 @@ ins,a{text-decoration:none}
 /*layout*/
 html,body{ width: 100%; font-size: 12px; line-height: 150%;}
 body{ max-width: 1920px; width: 100%; background-color: #fff;}
-.page-wrap{ background-color: #f3f3f3;}
-
 
 /*bootstrap*/
 @media (min-width:1400px){.container{width:1370px}}
