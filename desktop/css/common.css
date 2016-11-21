@@ -30,7 +30,7 @@ ins,a{text-decoration:none}
 .pop-alert .img-wrap div{background-size: contain; background-position: center; height: 100%; width: 100%; background-repeat: no-repeat;}
 
 /*layout*/
-html,body{ width: 100%; font-size: 12px;}
+html,body{ width: 100%; font-size: 12px; line-height: 150%;}
 body{ max-width: 1920px; width: 100%; background-color: #fff;}
 .page-wrap{ background-color: #f3f3f3;}
 
