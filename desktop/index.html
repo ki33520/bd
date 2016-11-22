@@ -7,6 +7,7 @@
 	<title>心追医疗集团</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.flipster.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -109,19 +110,31 @@
 						</div>
 						<ul class="doctor-list" data-json="data/doctor.json"></ul>
 					</div>
-					<div class="swiper-container">
-				        <div class="swiper-wrapper">
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				            <div class="swiper-slide"></div>
-				        </div>
-				        <!-- Add Pagination -->
-				        <div class="swiper-pagination"></div>
-				    </div>
+					<div class="flipster">
+				  <ul class="flip-items">
+					<li id="Coverflow-1">
+						<img src="pic/1.jpg">
+					</li>
+					<li id="Coverflow-2">
+						<img src="pic/2.jpg">
+					</li>
+					<li id="Coverflow-3">
+						<img src="pic/3.jpg">
+					</li>
+					<li id="Coverflow-4">
+						<img src="pic/4.jpg">
+					</li>
+					<li id="Coverflow-7">
+						<img src="pic/5.jpg">
+					</li>
+					<li id="Coverflow-5">
+						<img src="pic/6.jpg">
+					</li>
+					<li id="Coverflow-6">
+						<img src="pic/8.jpg">
+					</li>
+				  </ul>
+				</div>
 				</div>
 			</div>
 
@@ -136,6 +149,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.flipster.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

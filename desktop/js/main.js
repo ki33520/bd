@@ -19,21 +19,16 @@ $('.doctor-list').each(function(){
 		}
 	})
 })
+$(function(){
+	$(".flipster").flipster({
+		itemContainer: 'ul',
+		itemSelector: 'li',
+		style: 'coverflow',
+		start: 'center',
+		enableKeyboard: false,
+		enableMousewheel: false,
+		enableTouch: false,
+		onItemSwitch: function(){}
+	});
 
-
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        initialSlide: 0,
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        loop: true,
-        coverflow: {
-            rotate: 45,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true
-        }
-    });
+});
