@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=550, initial-scale=1">
+<title>jQuery支持触摸屏3D旋转木马特效 - 站长素材</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="src/css/jquery.flipster.css">
+<link rel="stylesheet" href="css/flipsternavtabs.css">
+</head>
+<body>
+<div class="zzsc-container">
+	<header class="zzsc-header">
+		<div class="zzsc-demo center">
+		  <a href="index.html">DEMO1</a>
+		  <a href="index2.html" class="current">DEMO2</a>
+		  <a href="index3.html">DEMO3</a>
+		</div>
+	</header>
+	<div class="zzsc-content bgcolor-3">
+		<div id="Main-Content">
+			<div class="Container">
+		<!-- Flipster List -->	
+				<div class="flipster">
+				  <ul class="flip-items">
+					<li id="Coverflow-1" title="Cricket" data-flip-category="Fun Sports">
+						<img src="img/1.jpg">
+					</li>
+					<li id="Coverflow-2" title="Surfing" data-flip-category="Fun Sports">
+						<img src="img/2.jpg">
+					</li>
+					<li id="Coverflow-3" title="Baseball" data-flip-category="Boring Sports">
+						<img src="img/3.jpg">
+					</li>
+					<li id="Coverflow-4" title="Running" data-flip-category="Boring Sports">
+						<img src="img/4.jpg">
+					</li>
+					<li id="Coverflow-7" title="Air Kicking" data-flip-category="These are Sports?">
+						<img src="img/5.jpg">
+					</li>
+					<li id="Coverflow-5" title="Bike Sitting" data-flip-category="These are Sports?">
+						<img src="img/6.jpg">
+					</li>
+					<li id="Coverflow-6" title="Extreme Bike Sitting" data-flip-category="These are Sports?">
+						<img src="img/8.jpg">
+					</li>
+				  </ul>
+				</div>
+		<!-- End Flipster List -->
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="src/js/jquery-1.8.3.min.js"></script>
+<script src="src/js/jquery.flipster.js"></script>
+<script>
+	$(function(){
+		
+		/*$(".flipster").flipster({
+			enableNav: true
+		});*/
+		$(".flipster").flipster({
+			itemContainer: 			'ul', // Container for the flippin' items.
+			itemSelector: 			'li', // Selector for children of itemContainer to flip
+			style:							'coverflow', // Switch between 'coverflow' or 'carousel' display styles
+			start: 							'center', // Starting item. Set to 0 to start at the first, 'center' to start in the middle or the index of the item you want to start with.
+			
+			enableKeyboard: 		true, // Enable left/right arrow navigation
+			enableMousewheel: 	true, // Enable scrollwheel navigation (up = left, down = right)
+			enableTouch: 				true, // Enable swipe navigation for touch devices
+			
+			enableNav: 					true, // If true, flipster will insert an unordered list of the slides
+			enableNavButtons: 	true, // If true, flipster will insert Previous / Next buttons
+			
+			onItemSwitch: 			function(){}, // Callback function when items are switches
+		});
+	
+	});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+</body>
+</html>
