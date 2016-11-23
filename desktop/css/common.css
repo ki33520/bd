@@ -38,3 +38,80 @@ body{ max-width: 1920px; width: 100%; background-color: #fff;}
 @media (min-width:1600px){.container{width:1570px}}
 @media (min-width:1800px){.container{width:1770px}}
 @media (min-width:1832px){.container{width:1802px}}
+
+.delay0_25{
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+}
+.delay0_5{
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+.delay0_75{
+  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+}
+.delay1{
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.delay1_25{
+  animation-delay: 1.25s;
+  -webkit-animation-delay: 1.25s;
+}
+.delay1_5{
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+.delay1_75{
+  animation-delay: 1.75s;
+  -webkit-animation-delay: 1.75s;
+}
+.delay2{
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+.delay2_25{
+  animation-delay: 2.25s;
+  -webkit-animation-delay: 2.25s;
+}
+.delay2_5{
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+}
+.delay2_75{
+  animation-delay: 2.75s;
+  -webkit-animation-delay: 2.75s;
+}
+.delay3{
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+.delay3_25{
+  animation-delay: 3.25s;
+  -webkit-animation-delay: 3.25s;
+}
+.delay3_5{
+  animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+}
+.delay4{
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+}
+.delay4_5{
+  animation-delay: 4.5s;
+  -webkit-animation-delay: 4.5s;
+}
+.delay5{
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+}
+.delay5_5{
+  animation-delay: 5.5s;
+  -webkit-animation-delay: 5.5s;
+}
+.delay6{
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+}

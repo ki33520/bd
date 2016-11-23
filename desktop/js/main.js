@@ -32,3 +32,19 @@ $(function(){
 	});
 
 });
+function aniFunc(wrap) {
+	$(wrap).find('.animate').each(function() {
+		$(this).show().addClass($(this).attr('data-animate') + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+			$(this).removeClass($(this).attr('data-animate') + ' animated animate');
+		});
+	});
+}
+function actionScroll(){
+	$('.animate-banner').each(function(index,item){
+		if($(window).height()+$(window).scrollTop() > $(item).offset().top){
+			aniFunc($(item))
+		}
+	})
+}
+actionScroll();
+$(window).on('scroll',_.throttle(actionScroll,300))
