@@ -38,7 +38,10 @@ $(function(){
 });
 function aniFunc(wrap) {
 	$(wrap).find('.animate').each(function() {
-		$(this).show().css({"visibility":"visible"}).addClass($(this).attr('data-animate') + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		if($(this).hasClass('img')){
+			$(this).css({"visibility":"visible"});
+		}
+		$(this).show().addClass($(this).attr('data-animate') + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 			$(this).removeClass($(this).attr('data-animate') + ' animated animate');
 		});
 	});

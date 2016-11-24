@@ -37,7 +37,7 @@ body{ max-width: 1920px; width: 100%; background-color: #fff;}
 @media (min-width:1400px){.container{width:1370px}}
 @media (min-width:1600px){.container{width:1570px}}
 @media (min-width:1800px){.container{width:1770px}}
-@media (min-width:1832px){.container{width:1802px}}
+@media (min-width:1830px){.container{width:1800px}}
 
 .delay0_25{
   animation-delay: 0.25s;
