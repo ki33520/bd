@@ -19,6 +19,10 @@ $('.doctor-list').each(function(){
 		}
 	})
 })
+var swiper = new Swiper('.swiper-container', {
+	pagination: '.swiper-pagination',
+	initialSlide: 0
+});
 $(function(){
 	$(".flipster").flipster({
 		itemContainer: 'ul',
@@ -34,7 +38,7 @@ $(function(){
 });
 function aniFunc(wrap) {
 	$(wrap).find('.animate').each(function() {
-		$(this).show().addClass($(this).attr('data-animate') + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$(this).show().css({"visibility":"visible"}).addClass($(this).attr('data-animate') + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 			$(this).removeClass($(this).attr('data-animate') + ' animated animate');
 		});
 	});

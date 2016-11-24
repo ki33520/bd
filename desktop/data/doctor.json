@@ -1,18 +1,18 @@
 [
 	{
 		"name":"1",
-		"pic":"doctor-1.png"
+		"pic":"doctor_1.jpg"
 	},
 	{
 		"name":"2",
-		"pic":"doctor-2.png"
+		"pic":"doctor_2.jpg"
 	},
 	{
 		"name":"3",
-		"pic":"doctor-3.png"
+		"pic":"doctor_3.jpg"
 	},
 	{
 		"name":"4",
-		"pic":"doctor-4.png"
+		"pic":"doctor_4.jpg"
 	}
 ]
