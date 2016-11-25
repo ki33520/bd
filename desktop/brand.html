@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.flipster.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/video-js.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -78,15 +79,13 @@
 							</div>
 						</div>
 					</div>
-					<div class="section section-4 banner animate-banner">
-						<div class="img animate" data-animate="zoomIn">
-							<div class="img-wrap"><img src="images/style_b4_img.jpg" /></div>
-						</div>
-						<div class="text animate delay1" data-animate="fadeInLeft">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/index_b4_text.png" /></div>
-							</div>
-						</div>
+					<div class="section section-4 banner">
+						<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="360"
+					      data-setup='{ "html5" : { "nativeTextTracks" : false } }'>
+					    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+					    <p class="vjs-no-js">error</p>
+					  </video>
+
 					</div>
 					<div class="section section-5 banner animate-banner">
 						<div class="img animate" data-animate="zoomIn">
@@ -114,6 +113,8 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.flipster.min.js"></script>
 	<script src="js/underscore.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/videojs-ie8.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

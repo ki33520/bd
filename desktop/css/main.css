@@ -24,7 +24,7 @@
 .swiper-pagination-bullet-active{ border: 1px solid #231F20;}
 .swiper-pagination-bullet-active:before{ background-color: #231F20;}
 .animate{ display: none;}
-.animate.img{ visibility: hidden; display: block;}
+.animate.img{ opacity: 0; display: block;}
 
 .confirm-btn{ padding: 0 0.3rem; margin: 0.2rem 0; box-sizing: border-box; height: 1.2rem; text-align: center;}
 .confirm-btn .btn{ line-height: 1.2rem; font-size: 0.48rem; border-radius: 0.12rem; width: 100%;}
@@ -35,11 +35,13 @@
 
 /*head*/
 .head{ background-color: #fff;}
+.logo{ width: 15.61%; padding: 5px 0;}
+.logo img{ width: 100%; display: block; }
 .language-tabs{ float: right; padding-right: 15px; padding: 8px 0;}
 .language-tabs .tab-item{ font-size: 12px; line-height: 120%; color: #000; border-left: 1px solid #666; float: left; padding: 0 5px;}
 .language-tabs .tab-item:first-child{ border-left: none; }
 .main-nav-wrap{ clear: right; padding: 8px 0;}
-.btn-menu{ float: right; line-height: 24px; font-size: 14px; width: 24px; height: 24px; background: url(../images/icon_menu.png) no-repeat left top; background-size: contair;}
+.btn-menu{ float: right; line-height: 14px; font-size: 14px; margin-top: 4px; width: 16px; height: 14px; background: url(../images/icon_menu.png) no-repeat left top; background-size: cover;}
 .main-nav{ float: right; padding-right: 15px;}
 .main-nav li{ float: left; }
 .main-nav li a{ color: #595959; float: left; line-height: 24px; font-size: 14px; padding: 0 15px; text-decoration: none;}
@@ -55,8 +57,8 @@
 .swiper-banner{ overflow: hidden;}
 .swiper-banner .img-wrap{ width: 100%;}
 
-.banner{ position: relative; min-height: 400px;}
-.banner .text{ position: absolute; width: 100%; height: 100%;}
+.banner{ position: relative;}
+.banner .text{ position: absolute; width: 100%;}
 .banner .img{ width: 100%; height: 100%;}
 .banner-r .text{ left: 0; top: 0;}
 .banner-l .text{ right: 0; top: 0;}
@@ -70,6 +72,8 @@
 .culm-list-3 li{ float: left; width: 33.3333%;}
 .culm-list-3 li>div{ padding: 0 2px;}
 .page-index .section-2 .text{ width: 33.9444444444444%; left: 8.33333333333333%; top: 4.83333333333333%;}
+.page-index .section-2 .tag-list{ position: absolute; left: 5%; top: 50%; width: 90%; }
+.page-index .section-2 .tag-list li{ float: left; width: 33.33333%; }
 .page-index .section-5 .text{ width: 41.33333%; left: 10%; top: 12%;}
 .page-index .section-6 .title,
 .page-index .section-7 .title{ width: 20.66667%; margin: 0 auto 1% auto;}
