@@ -1,0 +1,32 @@
+[
+	{
+		"name":"1",
+		"pic":"doctor_1.jpg",
+		"pop":"doctor_pop_1.png"
+	},
+	{
+		"name":"2",
+		"pic":"doctor_2.jpg",
+		"pop":"doctor_pop_2.png"
+	},
+	{
+		"name":"3",
+		"pic":"doctor_3.jpg",
+		"pop":"doctor_pop_3.png"
+	},
+	{
+		"name":"4",
+		"pic":"doctor_4.jpg",
+		"pop":"doctor_pop_4.png"
+	},
+	{
+		"name":"5",
+		"pic":"doctor_5.jpg",
+		"pop":"doctor_pop_5.png"
+	},
+	{
+		"name":"6",
+		"pic":"doctor_6.jpg",
+		"pop":"doctor_pop_6.png"
+	}
+]

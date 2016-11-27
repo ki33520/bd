@@ -9,11 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.flipster.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/video-js.css">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="page-wrap page-lifestyle">
+	<div class="page-wrap page-power">
 		<div class="container">
 			<div class="head">
 				<div class="head-inner">
@@ -45,59 +46,23 @@
 		
 			<div class="center">
 				<div class="center-inner">
-					<div class="section section-1 banner animate-banner">
-						<div class="bg">
-							<div class="img-wrap"><img src="images/style_b1_bg.jpg" /></div>
+					<div class="section section-1 animate-banner">
+						<div class="text">
+							<div class="img-wrap"><img src="images/power_b1_text.png" /></div>
 						</div>
-						<div class="img animate" data-animate="fadeInRight">
-							<div class="img-wrap"><img src="images/style_b1_img.png" /></div>
-						</div>
-						<div class="text animate" data-animate="fadeInLeft">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/index_b1_text.png" /></div>
-							</div>
+						<div class="list-view cf">
+							<ul class="doctor-list pop-doctor-list cf" data-json="data/doctor_2.json"></ul>
 						</div>
 					</div>
-					<div class="section section-2 banner animate-banner">
-						<div class="img animate" data-animate="zoomIn">
-							<div class="img-wrap"><img src="images/style_b2_img.jpg" /></div>
+					<div class="section section-2 animate-banner">
+						<div class="text">
+							<div class="img-wrap"><img src="images/power_b2_text.png" /></div>
 						</div>
-						<div class="text animate delay1" data-animate="fadeInRight">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/style_b2_text.png" /></div>
-							</div>
+						<div class="list-view cf">
+							<ul class="doctor-list pop-designer-list cf" data-json="data/designer.json"></ul>
 						</div>
 					</div>
-					<div class="section section-3 banner animate-banner">
-						<div class="img animate" data-animate="zoomIn">
-							<div class="img-wrap"><img src="images/style_b3_img.jpg" /></div>
-						</div>
-						<div class="text animate delay1" data-animate="fadeInLeft">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/style_b3_text.png" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="section section-4 banner animate-banner">
-						<div class="img animate" data-animate="zoomIn">
-							<div class="img-wrap"><img src="images/style_b4_img.jpg" /></div>
-						</div>
-						<div class="text animate delay1" data-animate="fadeInRight">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/style_b4_text.png" /></div>
-							</div>
-						</div>
-					</div>
-					<div class="section section-5 banner animate-banner">
-						<div class="img animate" data-animate="zoomIn">
-							<div class="img-wrap"><img src="images/style_b5_img.jpg" /></div>
-						</div>
-						<div class="text animate delay1" data-animate="fadeInLeft">
-							<div class="text-inner">
-								<div class="img-wrap"><img src="images/style_b5_text.png" /></div>
-							</div>
-						</div>
-					</div>
+
 				</div>
 			</div>
 
@@ -110,10 +75,18 @@
 	</div>
 
 	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$('.video').each(function(){
+			var w = $(this).width();
+			$(this).find('video').attr({'width':w})
+		})
+	</script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.flipster.min.js"></script>
 	<script src="js/underscore.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/videojs-ie8.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

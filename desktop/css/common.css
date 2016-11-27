@@ -24,10 +24,13 @@ ins,a{text-decoration:none}
 .text-left{ text-align: left;}
 .text-center{ text-align: center;}
 .text-right{ text-align: right;}
-.pop-alert{ position: absolute; color: #fff; z-index: 999; border-radius: 0.1rem; height: 100%; width: 100%; left: 0; top: 0; display: none;}
+.pop-alert{ position: absolute; color: #fff; z-index: 99999; border-radius: 0.1rem; height: 100%; width: 100%; left: 0; top: 0; display: none;}
 .pop-alert .text{ position: absolute; width: 6.18rem; height: 3.24rem; left: 50%; top: 50%; margin-top: -1.62rem; margin-left: -3.09rem; font-size: 0.3rem; line-height: 150%; background: rgba(0,0,0,0.80); border-radius: 0.2rem;}
-.pop-alert .img-wrap{ background: rgba(0,0,0,0.75); height: 100%; width: 100%; position: fixed; top: 0px; z-index: 10000; justify-content: center; align-items:center;}
-.pop-alert .img-wrap div{background-size: contain; background-position: center; height: 100%; width: 100%; background-repeat: no-repeat;}
+.pop-alert .pop-wrap{ height: 100%; width: 100%; position: fixed; top: 0px; left: 0;}
+.pop-masker{ background-color: #161831; opacity: 0.8; height: 100%; width: 100%; display: none; position: fixed; top: 0px; left: 0; z-index: 9999;}
+.pop-wrap-inner{ width: 70.833333333333%; opacity: 1; position: absolute; left: 15%; top: 50%; margin-top: -15%;}
+.pop-doctor .pop-wrap-inner{ width: 63.38888888888889%; left: 18.3%; margin-top: -20%;}
+.pop-designer .pop-wrap-inner{ width: 63.38888888888889%; left: 18.3%; margin-top: -16%;}
 
 /*layout*/
 html,body{ width: 100%; font-size: 12px; line-height: 150%;}
