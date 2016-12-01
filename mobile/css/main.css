@@ -22,6 +22,9 @@ ins,a{text-decoration:none}
 html,body{ height: 100%; width: 100%;}
 body{ position: relative; font-size: 0.32rem; text-align: left; background-color: #fff; font-family: arial,Helvetica,sans-serif;}
 .img-wrap img{ display: block; width: 100%; }
+.flex{ display: -webkit-box; display: -ms-flexbox; display: -webkit-flex;  display: flex;}
+.flex-items-center{ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;}
+.flex-items-middle{ -webkit-align-items: center; align-items:center;}
 
 .pop-alert{ position: absolute; color: #fff; z-index: 999; border-radius: 0.1rem; height: 100%; width: 100%; display: none;}
 .pop-alert .text{ position: absolute; width: 5rem; height: 1rem; left: 50%; top: 50%; margin-top: -0.6rem; margin-left: -2.7rem; font-size: 0.3rem; line-height: 150%; padding: .2rem; background: rgba(0,0,0,0.75); display: flex; justify-content: center; align-items:center;}
@@ -90,12 +93,23 @@ body{ position: relative; font-size: 0.32rem; text-align: left; background-color
 .page-power .section-2 .doctor-list li{ padding: 1rem 0;}
 
 
+/*doctor-detail*/
+.doctor-detail{ width: 9.44rem; margin: 0 auto; padding-top: 0.5rem;}
+.doctor-detail .detail-item{ display: none;}
+.doctor-detail .detail-item .img-left{ width: 4.53333333333333rem; height: 6.84rem; overflow: hidden; float: left;}
+.doctor-detail .detail-item .text-right{ border: 1px solid #dfdfdf; border-left: none; background-color: #fff;margin-top: 3.6rem; height: 3.22rem;}
+.doctor-detail .item-type-1 .text-right{ margin-top: 3.54rem; height: 3.26666666666667rem;}
+.doctor-detail .detail-item .text-right p{ padding: 0.3rem 0.15rem 0.15rem 0.25rem; font-size: 0.36rem; line-height: 130%; color: #666;}
+.doctor-detail .detail-item .des{ margin-top: 0.8rem;}
+.doctor-detail .detail-item .des p{ padding: 0 0.3rem; margin-bottom: 0.5rem; font-size: 0.38rem; line-height: 130%; color: #666;}
 
 
-
-
-
-
+/*beauty-detail*/
+.beauty-detail{ border: 1px solid #d7d7d7; width: 9.44rem; margin: 1rem auto;}
+.beauty-detail .beauty-item .title{ padding: 0.4rem; background-color: #b8b9ba;}
+.beauty-detail .beauty-item .title .img-wrap{ width: 5rem;}
+.beauty-detail .beauty-item .des{ padding: 0.4rem;}
+.beauty-detail .beauty-item .des p{ margin: 0.5rem 0; font-size: 0.36rem; line-height: 130%; color: #666;}
 
 
 

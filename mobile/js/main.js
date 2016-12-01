@@ -67,13 +67,14 @@ $(".flipster").flipster({
 $('.doctor-list').each(function(){
 	var self = this;
 	var url = $(this).data('json');
+	var link = $(this).data('link');
 	$.ajax({
 		url: url,
 		type: "get",
 		success: function(data){
 			$(self).empty();
 			$(data).each(function(index,item){
-				var img = item.pop ? '<img data-pop="pic/'+item.pop+'" src="pic/'+item.pic+'" />' : '<img src="pic/'+item.pic+'" />';
+				var img = link ? '<a href="'+link+'?node='+index+'"><img src="pic/'+item.pic+'" /></a>' :'<img src="pic/'+item.pic+'" />' ;
 				var cover = item.des ? '<div class="cover"><div class="name">'+item.name+'</div><div class="en">'+item.en+'</div><div class="des">'+item.des.replace('|','<br />')+'</div></div>' : null;
 				var li = $('<li class="item-doctor"><div class="item-inner"><div class="img-wrap">'+img+'</div></div></li>');
 				if(cover){
@@ -89,4 +90,9 @@ $('.doctor-list').each(function(){
 			})
 		}
 	})
+})
+
+$('.doctor-detail').each(function(){
+	var node = $.QueryString('node');
+	$(this).find('.detail-item').eq(node).show();
 })
